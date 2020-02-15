@@ -147,4 +147,7 @@ riceDiv.addEventListener('click', rice);
 friesDiv.addEventListener('click', fries);
 whateverDiv.addEventListener('click', all);
 
-btnRetour.addEventListener('click', () => window.location.reload());
+btnRetour.addEventListener('click', () => {
+	final.style.display = 'none';
+	parent.style.display = 'flex';
+});
