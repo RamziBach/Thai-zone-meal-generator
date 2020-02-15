@@ -58,7 +58,8 @@ body {
 	font-weight: 700;
 }
 
-.btn:hover {
+.btn:hover,
+.btn2:hover {
 	background-color: rgba(229, 25, 55, 0.1);
 }
 
