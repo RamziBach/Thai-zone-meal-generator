@@ -12,7 +12,7 @@ const whateverDiv = document.querySelector('.whatever-div');
 const vermicelleArr = ['PAD THAÏ', 'NOUILLES TERIYAKI', 'NOUILLES PANANG', 'MIEL ET AIL'];
 const riceArr = ['GÉNÉRAL TAO', 'GÉNÉRAL K.O.', 'RIZ FRIT', 'BOEUF À L’ORANGE', 'SAUTÉ AUX ARACHIDES', 'SAUTÉ THAÏ', 'CURRY ROUGE', 'CURRY JAUNE'];
 const fritesArr = ['POUTINE TAO', 'POUTINE K.O.', 'POUTINE CHOU-FLEUR', 'POUTINE BOEUF THAI'];
-const allArr = ['GÉNÉRAL TAO', 'RIZ FRIT', 'PAD THAÏ', 'BOEUF À L’ORANGE', 'SAUTÉ AUX ARACHIDES', 'SAUTÉ THAÏ', 'NOUILLES TERIYAKI', 'CHOP SUEY', 'CURRY ROUGE', 'CURRY JAUNE', 'NOUILLES PANANG', 'SALADE TAO', 'MIEL ET AIL', 'GÉNÉRAL K.O.'];
+const allArr = ['GÉNÉRAL TAO', 'RIZ FRIT', 'PAD THAÏ', 'BOEUF À L’ORANGE', 'SAUTÉ AUX ARACHIDES', 'SAUTÉ THAÏ', 'NOUILLES TERIYAKI', 'CHOP SUEY', 'CURRY ROUGE', 'CURRY JAUNE', 'NOUILLES PANANG', 'SALADE TAO', 'MIEL ET AIL', 'GÉNÉRAL K.O.', 'POUTINE TAO', 'POUTINE K.O.', 'POUTINE CHOU-FLEUR', 'POUTINE BOEUF THAI'];
 
 const vermicelle = () => {
 	svgContainer.style.display = 'none';
@@ -132,6 +132,18 @@ const all = () => {
 			break;
 		case 13:
 			h1.innerHTML = allArr[13];
+			break;
+		case 14:
+			h1.innerHTML = allArr[14];
+			break;
+		case 15:
+			h1.innerHTML = allArr[15];
+			break;
+		case 16:
+			h1.innerHTML = allArr[16];
+			break;
+		case 17:
+			h1.innerHTML = allArr[17];
 			break;
 	}
 };
