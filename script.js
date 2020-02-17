@@ -10,9 +10,9 @@ const friesDiv = document.querySelector('.fries-div');
 const whateverDiv = document.querySelector('.whatever-div');
 
 const vermicelleArr = ['PAD THAÏ', 'NOUILLES TERIYAKI', 'NOUILLES PANANG', 'MIEL ET AIL'];
-const riceArr = ['GÉNÉRAL TAO', 'GÉNÉRAL K.O.', 'RIZ FRIT', 'BOEUF À L’ORANGE', 'SAUTÉ AUX ARACHIDES', 'SAUTÉ THAÏ', 'CURRY ROUGE', 'CURRY JAUNE'];
+const riceArr = ['GÉNÉRAL TAO', 'GÉNÉRAL K.O.', 'RIZ FRIT', 'BOEUF À L’ORANGE', 'SAUTÉ AUX ARACHIDES', 'SAUTÉ THAÏ', 'CURRY ROUGE', 'CURRY JAUNE', 'TAO CHOU-FLEUR'];
 const fritesArr = ['POUTINE TAO', 'POUTINE K.O.', 'POUTINE CHOU-FLEUR', 'POUTINE BOEUF THAI'];
-const allArr = ['GÉNÉRAL TAO', 'RIZ FRIT', 'PAD THAÏ', 'BOEUF À L’ORANGE', 'SAUTÉ AUX ARACHIDES', 'SAUTÉ THAÏ', 'NOUILLES TERIYAKI', 'CHOP SUEY', 'CURRY ROUGE', 'CURRY JAUNE', 'NOUILLES PANANG', 'SALADE TAO', 'MIEL ET AIL', 'GÉNÉRAL K.O.', 'POUTINE TAO', 'POUTINE K.O.', 'POUTINE CHOU-FLEUR', 'POUTINE BOEUF THAI'];
+const allArr = ['GÉNÉRAL TAO', 'RIZ FRIT', 'PAD THAÏ', 'BOEUF À L’ORANGE', 'SAUTÉ AUX ARACHIDES', 'SAUTÉ THAÏ', 'NOUILLES TERIYAKI', 'CHOP SUEY', 'CURRY ROUGE', 'CURRY JAUNE', 'NOUILLES PANANG', 'SALADE TAO', 'MIEL ET AIL', 'GÉNÉRAL K.O.', 'POUTINE TAO', 'POUTINE K.O.', 'POUTINE CHOU-FLEUR', 'POUTINE BOEUF THAI', 'TAO CHOU-FLEUR'];
 
 const vermicelle = () => {
 	svgContainer.style.display = 'none';
@@ -62,6 +62,9 @@ const rice = () => {
 			break;
 		case 7:
 			h1.innerHTML = riceArr[7];
+			break;
+		case 8:
+			h1.innerHTML = riceArr[8];
 			break;
 	}
 };
@@ -145,6 +148,9 @@ const all = () => {
 		case 17:
 			h1.innerHTML = allArr[17];
 			break;
+		case 18:
+			h1.innerHTML = allArr[18];
+			break;
 	}
 };
 
@@ -161,5 +167,5 @@ whateverDiv.addEventListener('click', all);
 
 btnRetour.addEventListener('click', () => {
 	final.style.display = 'none';
-	parent.style.display = 'flex';
+	svgContainer.style.display = 'flex';
 });
